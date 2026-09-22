@@ -29,6 +29,11 @@ internal class Program
         //    Console.WriteLine(i);
         //}
 
+        //GENERIC CLASS
+
+        //var obj = new GenericClass<int>("Integer", 5);
+        //var obj2 = new GenericClass<string>("String", "Hello");
+        //var obj3 = new GenericClass<double>("Double", 25.5);
 
 
     }
