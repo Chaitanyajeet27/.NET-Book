@@ -36,5 +36,15 @@ internal class Program
         //var obj3 = new GenericClass<double>("Double", 25.5);
 
 
+        //GENERIC METHOD
+
+        //var a = 20; var b = 30;
+        //var obj = new GenericMethod();
+        //obj.Swap<int>(ref a, ref b);
+        //Console.WriteLine($"Variable A : {a} , Variable B : {b}");
+
+
+
+
     }
 }
