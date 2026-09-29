@@ -1,8 +1,11 @@
 ﻿using c__Book;
+using System.Security.Cryptography.X509Certificates;
+using System;
+
 
 internal class Program 
 {
-    private static void Main(string[] args)
+    public static void Main(string[] args)
     {
         //INTERFACES
         //    Console.WriteLine("Hello, World!");
@@ -42,6 +45,13 @@ internal class Program
         //var obj = new GenericMethod();
         //obj.Swap<int>(ref a, ref b);
         //Console.WriteLine($"Variable A : {a} , Variable B : {b}");
+
+        //EXTENTION METHOD
+
+       // string name = "Mandeep";
+       // Console.WriteLine(name);
+
+       //Console.WriteLine( name.Greet());
 
 
 
