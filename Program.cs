@@ -140,5 +140,32 @@ internal class Program
         //    Console.WriteLine();
         //        }
 
+
+        //Array properties
+
+        //int[] numbers = { 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
+
+        //Console.WriteLine(numbers.Length);
+        //Console.WriteLine(numbers.Rank);
+
+        //array create instance 
+
+        //Array array = Array.CreateInstance(typeof(int), 5);
+
+        //array.SetValue(10, 0);
+        //array.SetValue(20, 1);
+        //array.SetValue(30, 2);
+        //array.SetValue(40, 3);
+        //array.SetValue(50, 4);
+
+        //foreach (var item in array) 
+        //{
+        //    Console.WriteLine(item);
+        //}
+
+        //for (int i = 0; i < array.Length; i++) { 
+        //Console.WriteLine(array.GetValue(i));
+        //}
+
     }
 }
