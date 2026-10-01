@@ -48,10 +48,30 @@ internal class Program
 
         //EXTENTION METHOD
 
-       // string name = "Mandeep";
-       // Console.WriteLine(name);
+        // string name = "Mandeep";
+        // Console.WriteLine(name);
 
-       //Console.WriteLine( name.Greet());
+        //Console.WriteLine( name.Greet());
+
+
+        //ARRAY 
+
+        //int[] arr = new int[4];
+        //Console.WriteLine(arr[1]);
+
+        // person class obj array
+
+        //Person[] personarr = { new Person { name = "Chaitanya", age = 20 },
+        //                       new Person { name = "Mandeep" , age = 23 },
+        //                       new Person { name = "Rajat" , age = 21 }
+        //} ;
+
+        //foreach (Person i in personarr)
+        //{
+        //    Console.WriteLine($"Name = {i.name} , Age = {i.age}");
+        //}
+        
+        
 
 
 
