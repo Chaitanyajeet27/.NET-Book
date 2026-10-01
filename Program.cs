@@ -86,5 +86,43 @@ internal class Program
         //    }
         //    Console.WriteLine("");
         //}
+
+        //3D array
+
+        int[,,] array3D =
+ {
+    {
+        { 1,  2,  3 },
+        { 4,  5,  6 },
+        { 7,  8,  9 }
+    },
+
+    {
+        { 10, 11, 12 },
+        { 13, 14, 15 },
+        { 16, 17, 18 }
+    },
+
+    {
+        { 19, 20, 21 },
+        { 22, 23, 24 },
+        { 25, 26, 27 }
+    }
+};
+
+        for (int i = 0; i < array3D.GetLength(0); i++)
+        {
+            for (int j = 0; j < array3D.GetLength(1); j++)
+            {
+                for(int k = 0; k < array3D.GetLength(2); k++)
+                {
+                    Console.Write(array3D[i, j, k] + " ");
+                }
+                Console.WriteLine(" ");
+            }
+            Console.WriteLine(" ");
+        }
+
+
     }
 }
