@@ -167,5 +167,15 @@ internal class Program
         //Console.WriteLine(array.GetValue(i));
         //}
 
+
+
+        //Clone array 
+
+
+        //int[] array1 = { 1, 2, 3, 4, 5, };
+        //int[] array2 = (int[])array1.Clone();
+        //int[] array3 = new int[10];
+        //Array.Copy(array1, array3, 10);
+
     }
 }
