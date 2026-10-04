@@ -177,5 +177,19 @@ internal class Program
         //int[] array3 = new int[10];
         //Array.Copy(array1, array3, 10);
 
+
+        //array of object and icomparable
+
+        ArrayOfObjects[] array = 
+        {
+            new ArrayOfObjects() { name = "Chaitanya" , age = 20 },
+            new ArrayOfObjects() { name = "Mandeep" , age = 23 },
+            new ArrayOfObjects() { name = "Suman" , age = 25 },
+            new ArrayOfObjects() { name = "Ayush" , age = 17 }
+        };
+        foreach (ArrayOfObjects obj in array) { Console.WriteLine(obj.age); }
+        Array.Sort(array);
+        Console.WriteLine("After sort");
+        foreach (ArrayOfObjects obj in array) { Console.WriteLine(obj.age); }
     }
 }
