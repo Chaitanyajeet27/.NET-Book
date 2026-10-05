@@ -195,16 +195,28 @@ internal class Program
 
         // Icomparer
 
-        ArrayOfObjects[] array =
-        {
-            new ArrayOfObjects() { name = "Chaitanya" , age = 20 },
-            new ArrayOfObjects() { name = "Mandeep" , age = 23 },
-            new ArrayOfObjects() { name = "Suman" , age = 25 },
-            new ArrayOfObjects() { name = "Ayush" , age = 17 }
-        };
+        // ArrayOfObjects[] array =
+        // {
+        //     new ArrayOfObjects() { name = "Chaitanya" , age = 20 },
+        //     new ArrayOfObjects() { name = "Mandeep" , age = 23 },
+        //     new ArrayOfObjects() { name = "Suman" , age = 25 },
+        //     new ArrayOfObjects() { name = "Ayush" , age = 17 }
+        // };
 
-        var compare = new Comparer();
+        // var compare = new Comparer();
 
-       Console.WriteLine(compare.Compare(array[0], array[1]));
+        //Console.WriteLine(compare.Compare(array[0], array[1]));
+
+
+        //array segment 
+
+        //int[] array = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+
+        //ArraySegment<int> segment = new ArraySegment<int>(array, 2, 4);
+
+        //foreach(var i in segment)
+        //{
+        //    Console.Write(i + " ");
+        //}
     }
 }
