@@ -180,16 +180,31 @@ internal class Program
 
         //array of object and icomparable
 
-        ArrayOfObjects[] array = 
+        //ArrayOfObjects[] array = 
+        //{
+        //    new ArrayOfObjects() { name = "Chaitanya" , age = 20 },
+        //    new ArrayOfObjects() { name = "Mandeep" , age = 23 },
+        //    new ArrayOfObjects() { name = "Suman" , age = 25 },
+        //    new ArrayOfObjects() { name = "Ayush" , age = 17 }
+        //};
+        //foreach (ArrayOfObjects obj in array) { Console.WriteLine(obj.age); }
+        //Array.Sort(array);
+        //Console.WriteLine("After sort");
+        //foreach (ArrayOfObjects obj in array) { Console.WriteLine(obj.age); }
+
+
+        // Icomparer
+
+        ArrayOfObjects[] array =
         {
             new ArrayOfObjects() { name = "Chaitanya" , age = 20 },
             new ArrayOfObjects() { name = "Mandeep" , age = 23 },
             new ArrayOfObjects() { name = "Suman" , age = 25 },
             new ArrayOfObjects() { name = "Ayush" , age = 17 }
         };
-        foreach (ArrayOfObjects obj in array) { Console.WriteLine(obj.age); }
-        Array.Sort(array);
-        Console.WriteLine("After sort");
-        foreach (ArrayOfObjects obj in array) { Console.WriteLine(obj.age); }
+
+        var compare = new Comparer();
+
+       Console.WriteLine(compare.Compare(array[0], array[1]));
     }
 }
