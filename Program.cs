@@ -1,6 +1,8 @@
 ﻿using c__Book;
 using System.Security.Cryptography.X509Certificates;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 
 internal class Program
@@ -218,5 +220,17 @@ internal class Program
         //{
         //    Console.Write(i + " ");
         //}
+
+        //IEnumarator Implimentation
+
+
+        List<int> numbers = new List<int> (){ 11, 22, 33, 44, 55, 66, 77 };
+        IEnumerator<int> nums = numbers.GetEnumerator();
+
+        while(nums.MoveNext())
+        {
+            Console.WriteLine(nums.Current);
+        }
+
     }
 }
