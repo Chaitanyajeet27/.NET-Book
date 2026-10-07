@@ -229,6 +229,7 @@ internal class Program
 
         //while (nums.MoveNext())
         //{
+           
         //    Console.WriteLine(nums.Current);
         //}
 
@@ -247,21 +248,31 @@ internal class Program
         //    Console.WriteLine(i);
         //}
 
-        IEnumerator<int> GetNumbers()
-        {
-            yield return 0;
-            yield return 1;
-            yield return 2;
-            yield return 3;
-        }
+        //IEnumerator<int> GetNumbers()
+        //{
+        //    yield return 0;
+        //    yield return 1;
+        //    yield return 2;
+        //    yield return 3;
+        //}
 
-        var enumerator = GetNumbers();
+        //var enumerator = GetNumbers();
 
-        while (enumerator.MoveNext())
-        {
-            var value = enumerator.Current;
-            Console.WriteLine(value);
-        }
+        //while (enumerator.MoveNext())
+        //{
+        //    var value = enumerator.Current;
+        //    Console.WriteLine(value);
+        //}
+
+
+        //Tuple generic
+
+        Tuple<int, string> values= new Tuple<int, string>(  1 , "hi");
+        Console.WriteLine(values.Item1);
+        Console.WriteLine(values.Item2);
+
+       
+
 
 
     }
