@@ -229,7 +229,7 @@ internal class Program
 
         //while (nums.MoveNext())
         //{
-           
+
         //    Console.WriteLine(nums.Current);
         //}
 
@@ -265,14 +265,20 @@ internal class Program
         //}
 
 
-        //Tuple generic
+        //Old Tuple
 
-        Tuple<int, string> values= new Tuple<int, string>(  1 , "hi");
+        //Tuple<int, string> values= new Tuple<int, string>(  1 , "hi");
+        //Console.WriteLine(values.Item1);
+        //Console.WriteLine(values.Item2);
+
+        //Value Tuple
+
+        (int id, string name) values = (id: 1,name : "Chaitanya");
         Console.WriteLine(values.Item1);
         Console.WriteLine(values.Item2);
 
-       
-
+        Console.WriteLine(values.id);
+        Console.WriteLine(values.name);
 
 
     }
