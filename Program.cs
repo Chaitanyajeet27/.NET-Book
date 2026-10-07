@@ -233,21 +233,35 @@ internal class Program
         //}
 
 
-        IEnumerable<int> GetNumber()
+        //IEnumerable<int> GetNumber()
+        //{
+        //    yield return 0;
+        //    yield return 1;
+        //    yield return 2;
+        //    yield return 3;
+
+        //}
+
+        //foreach (int i in GetNumber())
+        //{
+        //    Console.WriteLine(i);
+        //}
+
+        IEnumerator<int> GetNumbers()
         {
             yield return 0;
             yield return 1;
             yield return 2;
             yield return 3;
-
         }
 
-        foreach (int i in GetNumber())
+        var enumerator = GetNumbers();
+
+        while (enumerator.MoveNext())
         {
-            Console.WriteLine(i);
+            var value = enumerator.Current;
+            Console.WriteLine(value);
         }
-
-        
 
 
     }
