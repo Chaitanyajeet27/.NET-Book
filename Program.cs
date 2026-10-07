@@ -221,16 +221,34 @@ internal class Program
         //    Console.Write(i + " ");
         //}
 
-        //IEnumarator Implimentation
+        //IEnumarator Implementation
 
 
-        List<int> numbers = new List<int> (){ 11, 22, 33, 44, 55, 66, 77 };
-        IEnumerator<int> nums = numbers.GetEnumerator();
+        //List<int> numbers = new List<int>() { 11, 22, 33, 44, 55, 66, 77 };
+        //IEnumerator<int> nums = numbers.GetEnumerator();
 
-        while(nums.MoveNext())
+        //while (nums.MoveNext())
+        //{
+        //    Console.WriteLine(nums.Current);
+        //}
+
+
+        IEnumerable<int> GetNumber()
         {
-            Console.WriteLine(nums.Current);
+            yield return 0;
+            yield return 1;
+            yield return 2;
+            yield return 3;
+
         }
+
+        foreach (int i in GetNumber())
+        {
+            Console.WriteLine(i);
+        }
+
+        
+
 
     }
 }
